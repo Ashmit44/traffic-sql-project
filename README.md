@@ -6,7 +6,7 @@
 Real-time dashboard for tracking traffic violations and fines.
 
 ## Features
-- Interactive Dash visualizations
+- Dash visualizations
 - MySQL database integration
 - Payment status tracking
 - Violation type analysis
@@ -17,22 +17,19 @@ Real-time dashboard for tracking traffic violations and fines.
    CREATE DATABASE violations_db;
    ```
 
-2. Import schema and data:
-   ```bash
-   mysql -u root -p violations_db < database/schema.sql
-   mysql -u root -p violations_db < database/sample_data.sql
-   ```
+2. Execute sample data set file:
+   
 
-3. Install Python requirements:
+4. Install Python requirements:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Create `.env` file with your credentials
+5. Create `.env` file with your credentials
 
-5. Run the dashboard:
+6. Run the dashboard:
    ```bash
-   python src/dashboard.py
+   python dashboard.py
    ```
 
 ## Tech Stack
