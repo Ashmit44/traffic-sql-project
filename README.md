@@ -15,10 +15,12 @@ Real-time dashboard for tracking traffic violations and fines.
 1. Install MySQL and create database:
    ```sql
    CREATE DATABASE violations_db;
+
    ```
 
 2. Execute sample dataset query file:
-   
+
+   ![Screenshot 2025-03-23 022044](https://github.com/user-attachments/assets/833d3da5-c760-43f0-b355-510e333621b3)
 
 4. Install Python requirements:
    ```bash
