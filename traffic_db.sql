@@ -8,7 +8,7 @@ CREATE TABLE drivers (
 
 -- Vehicles Table
 CREATE TABLE vehicles (
-    vehicle_id VARCHAR(20) PRIMARY KEY, -- e.g., "ABC-123"
+    vehicle_id VARCHAR(20) PRIMARY KEY,
     type VARCHAR(50), -- Car, Bike, Truck
     owner_id INT,
     make VARCHAR(50),
@@ -18,7 +18,7 @@ CREATE TABLE vehicles (
 
 -- Violations Table
 CREATE TABLE violations (
-    violation_code VARCHAR(10) PRIMARY KEY, -- e.g., "OVSPD"
+    violation_code VARCHAR(10) PRIMARY KEY, -- example:OVSPD
     description TEXT,
     fine_amount DECIMAL(10, 2) NOT NULL
 );
