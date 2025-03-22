@@ -1,17 +1,12 @@
 from sqlalchemy import create_engine, Column, Integer, String, Date, Boolean, Float, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, Session
-from typing import Optional
+from sqlalchemy.orm import sessionmaker
 
-# Database connection
-DATABASE_URI = "mysql+pymysql://root:system@localhost/violations_db"
-engine = create_engine(DATABASE_URI)
+engine = create_engine("mysql+pymysql://root:system@localhost/violations_db")
 Session = sessionmaker(bind=engine)
 session = Session()
-
 Base = declarative_base()
 
-# Define SQLAlchemy models
 class Driver(Base):
     __tablename__ = 'drivers'
     driver_id = Column(Integer, primary_key=True, autoincrement=True)
@@ -43,5 +38,4 @@ class Challan(Base):
     location = Column(String(100))
     paid = Column(Boolean, default=False)
 
-# Create tables (run once)
 Base.metadata.create_all(engine)
