@@ -17,7 +17,7 @@ Real-time dashboard for tracking traffic violations and fines.
    CREATE DATABASE violations_db;
    ```
 
-2. Execute sample data set file:
+2. Execute sample dataset query file:
    
 
 4. Install Python requirements:
